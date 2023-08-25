@@ -27,7 +27,7 @@
 
   foreach ($data as $value) { ?>
     
-      <div class="col-3 d-flex justify-content-center">
+      <div class="col-4 d-flex justify-content-center">
         <div class="card shadow" style="width: 18rem;">
           <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50 mx-auto" alt="...">
             <div class="card-body">

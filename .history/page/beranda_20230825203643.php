@@ -13,9 +13,6 @@
     <?php } ?>
   </div>
 
-  <div class="m-5">
-    <h3>Produk Populer</h3>
-  </div>
   
   <?php
   include 'lib/koneksi.php';
@@ -27,9 +24,9 @@
 
   foreach ($data as $value) { ?>
     
-      <div class="col-3 d-flex justify-content-center">
-        <div class="card shadow" style="width: 18rem;">
-          <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50 mx-auto" alt="...">
+      <div class="col-4 justify-content-center">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50" alt="...">
             <div class="card-body">
             <h5 class="card-title"><?php echo $value['deskripsi']; ?></h5>
             <p class="fw-bold"><?php echo "Rp.".$value['harga']; ?></p>

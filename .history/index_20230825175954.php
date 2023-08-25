@@ -19,6 +19,7 @@
 
   <?php include("content.php") ?>
 
+  <?php include("page/user/keranjang.php") ?>
   <div class="footer">
     <p>Owner by iqbal </p>
   </div>

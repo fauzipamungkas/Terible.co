@@ -13,7 +13,7 @@
     <?php } ?>
   </div>
 
-  <div class="m-5">
+  <div class="m-3">
     <h3>Produk Populer</h3>
   </div>
   
@@ -27,8 +27,8 @@
 
   foreach ($data as $value) { ?>
     
-      <div class="col-3 d-flex justify-content-center">
-        <div class="card shadow" style="width: 18rem;">
+      <div class="col-4 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
           <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50 mx-auto" alt="...">
             <div class="card-body">
             <h5 class="card-title"><?php echo $value['deskripsi']; ?></h5>

@@ -7,6 +7,7 @@ if (isset ($_SESSION['username'])){
 
     echo "<a href='?page=beranda'>Beranda</a>
           <a href='?page=belanja'>Pesanan</a>
+          
           <a href='?page=tentang'>Tentang</a>
           <a href='page/logout.php' class='logout'>keluar</a>
           <a href='?page=profil'><b>Hey, </b>$user</a>";
@@ -19,8 +20,9 @@ if (isset ($_SESSION['username'])){
           <a href='?page=barang'>Barang</a>
           <a href='?page=transaksi'>Transaksi</a>
           <a href='?page=user'>User</a>
+          <a href='?page=profilad'>Profil</a>
           <a href='page/logout.php' class='logout'>keluar</a>
-          <a href='?page=profilad'><b>Hey, </b>$user</a>";
+          <p><b>Hey, </b>$user</p>";
   }
 } else {
   echo "<a href='?page=beranda'>Beranda</a>

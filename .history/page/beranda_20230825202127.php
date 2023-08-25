@@ -13,9 +13,6 @@
     <?php } ?>
   </div>
 
-  <div class="m-5">
-    <h3>Produk Populer</h3>
-  </div>
   
   <?php
   include 'lib/koneksi.php';
@@ -27,11 +24,12 @@
 
   foreach ($data as $value) { ?>
     
-      <div class="col-3 d-flex justify-content-center">
-        <div class="card shadow" style="width: 18rem;">
-          <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50 mx-auto" alt="...">
+      <div class="col-4 justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title"><?php echo $value['deskripsi']; ?></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <p class="fw-bold"><?php echo "Rp.".$value['harga']; ?></p>
             <?php
             $id = $value['id_barang'];
@@ -47,10 +45,26 @@
             if ($sisa > 0) echo $sisa;
             else echo "Habis";
             ?></p>
-            <a href="?page=belanja_detail&id=<?php echo $value['id_barang']; ?>&st=<?php echo $sisa; ?>" class="btn btn-primary">Go somewhere</a>
+            <a href="?page=belanja_detail&id=<?php echo $value['id_barang']; ?>" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
+    
+  
+
+    <table>
+  <tr>
+    
+    <?php
+    if ($sisa > 0){
+    if (isset ($_SESSION['username']) != ""){ ?>
+      <a class="link"href="?page=belanja_detail&id=<?php echo $value['id_barang']; ?>&st=<?php echo $sisa; ?>">Beli</a>
+    <?php }} ?>
+    </td>
   <?php
+    if ($no%4 == 0) echo "</tr><tr>";
+    $no++;
     } ?>
+</tr>
+</table>
 </div>

@@ -17,6 +17,7 @@
 
 /* css login */
 .login {
+  float: right;
   margin: 10px;
   padding: 10px;
   border: none;
@@ -34,40 +35,49 @@
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
-
-/* css navbar */
-nav {
-  background-color: #3db8fd;
-  color: white;
-  padding: 0 30px 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.login:hover {
+  background: #da7517;
 }
-
-nav a {
-  color: white;
-  margin-left: 20px;
+nav ul li.logout {
+  float: right;
+  padding: 0px;
+  background: #e41f49;
+  border-left: 4px solid #d0163d;
 }
-
-nav a:hover {
-  text-decoration: underline !important;
+nav ul li.logout:hover {
+  background: #d0163d;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
+nav ul li:hover {
+  background: #15a95e;
 }
-
+nav ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
 .box-title {
+  background: #00bfff;
+
   height: 30px;
   margin: auto;
+  border: 3px solid #00bfff;
 }
 .box-title p {
+  color: #f3f5f4;
   margin: 5px 5px;
   font-family: sans-serif;
+}
+#box {
+  border-bottom: 0px;
+  border-left: 3px solid #00bfff;
+  border-right: 3px solid #00bfff;
+
+  margin: auto;
+  min-height: 200px;
+  overflow: hidden;
 }
 
 table.news {
@@ -112,6 +122,17 @@ table.article {
 }
 /* code by muh iriansyah putra pratama */
 
+#box p,
+h1,
+h2,
+table,
+tr,
+td,
+img {
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: justify;
+}
 table tr td.list :hover {
   background: #00bfff;
   border-radius: 5px;

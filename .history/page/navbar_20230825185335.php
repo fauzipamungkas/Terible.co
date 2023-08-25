@@ -18,7 +18,7 @@ if (isset ($_SESSION['username'])){
     echo "<a href='?page=beranda'>Beranda</a>
           <a href='?page=barang'>Barang</a>
           <a href='?page=transaksi'>Transaksi</a>
-          <a href='?page=user'>User</a>
+          <a href='?page=user'>Profil</a>
           <a href='page/logout.php' class='logout'>keluar</a>
           <a href='?page=profilad'><b>Hey, </b>$user</a>";
   }

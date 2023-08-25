@@ -1,0 +1,32 @@
+<?php
+session_start();
+if (isset ($_SESSION['username'])){
+  if ($_SESSION['status'] == 'user'){
+    $user = $_SESSION['username'];
+    // $title = $_SESSION['status'];
+
+    echo "<li><a href='?page=beranda'>Beranda</a></li>
+          <li><a href='?page=belanja'>Pesanan</a></li>
+          <li><a href='?page=profil'>Profil</a></li>
+          <li><a href='?page=tentang'>Tentang</a></li>
+          <li class='logout'><a href='page/logout.php'>keluar</a></li>
+          <li class='login'><a><b>Hey, </b>$user</a></li>";
+
+  } elseif ($_SESSION['status'] == 'admin') {
+    $user = $_SESSION['username'];
+    // $title = $_SESSION['status'];
+
+    echo "<li><a href='?page=beranda'>Beranda</a></li>
+          <li><a href='?page=barang'>Barang</a></li>
+          <li><a href='?page=transaksi'>Transaksi</a></li>
+          <li><a href='?page=user'>User</a></li>
+          <li><a href='?page=profilad'>Profil</a></li>
+          <li class='logout'><a href='page/logout.php'>keluar</a></li>
+          <li class='login'><a><b>Hey, </b>$user</a></li>";
+  }
+} else {
+  echo "<li><a href='?page=beranda'>Beranda</a></li>
+        <li><a href='?page=tentang'>Tentang</a></li>
+        <button class='login'><a href='page/login.php' class='btn'>Masuk</a></button>";
+}
+ ?>

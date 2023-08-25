@@ -69,6 +69,11 @@ nav a:hover {
   margin: 5px 5px;
   font-family: sans-serif;
 }
+#box {
+  margin: auto;
+  min-height: 200px;
+  overflow: hidden;
+}
 
 table.news {
   border-collapse: collapse;

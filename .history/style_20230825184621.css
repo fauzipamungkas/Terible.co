@@ -49,11 +49,7 @@ nav {
 
 nav a {
   color: white;
-  margin-left: 20px;
-}
-
-nav a:hover {
-  text-decoration: underline !important;
+  margin-left: 30px;
 }
 
 .logo {
@@ -68,6 +64,11 @@ nav a:hover {
 .box-title p {
   margin: 5px 5px;
   font-family: sans-serif;
+}
+#box {
+  margin: auto;
+  min-height: 200px;
+  overflow: hidden;
 }
 
 table.news {
@@ -112,6 +113,16 @@ table.article {
 }
 /* code by muh iriansyah putra pratama */
 
+#box p,
+h1,
+h2,
+table,
+tr,
+td {
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: justify;
+}
 table tr td.list :hover {
   background: #00bfff;
   border-radius: 5px;
