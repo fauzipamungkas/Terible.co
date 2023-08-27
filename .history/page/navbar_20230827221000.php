@@ -1,5 +1,12 @@
 <?php
 
+include 'lib/koneksi.php';
+
+$query = $conn->prepare("SELECT *
+                        FROM tbl_keranjang");
+$data = $query->fetchAll();
+$count = $query->rowCount();
+
 session_start();
 if (isset ($_SESSION['username'])){
   if ($_SESSION['status'] == 'user'){
@@ -9,6 +16,7 @@ if (isset ($_SESSION['username'])){
           <a href='?page=profil'><b>Hey, </b>$user</a>
           <a href='?page=beranda'>Beranda</a>
           <a href='?page=belanja'>Pesanan</a>
+          <a>haloo : $count</a>
           <a href='?page=tentang'>Tentang</a>
           <a href='page/logout.php' class='logout'>keluar</a>";
 

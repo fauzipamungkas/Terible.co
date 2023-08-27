@@ -28,8 +28,8 @@
   $count = $query->rowCount();
   ?>
 
-  <table class="news">
-    <tr align="center">
+  <table class="news pt-5">
+    <tr>
       <th>No</th>
       <th>Id Pesanan</th>
       <th>Barang</th>
@@ -46,15 +46,15 @@
     foreach ($data as $value): ?>
         <tr>
             <td><?php echo $no; ?></td>
-            <td align="center"><?php echo $value['id_pesanan'] ?></td>
+            <td><?php echo $value['id_pesanan'] ?></td>
             <td><?php echo $value['deskripsi'] ?></td>
-            <td><?php echo "Rp.".number_format($value['harga'],0,",",".") ?></td>
+            <td><?php echo $value['harga'] ?></td>
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
             <td><?php echo $value['date_in'] ?></td>
-            <td class="fw-bold"><?php echo "Rp.".number_format($value['total'],0,",",".") ?></td>
-            <td align="center">
+            <td><?php echo $value['total'] ?></td>
+            <td>
               <a class="tombol-biru">Sukses</a>
             </td>
         </tr>

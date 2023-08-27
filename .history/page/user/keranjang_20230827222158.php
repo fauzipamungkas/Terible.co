@@ -21,10 +21,9 @@ $count = $query->rowCount();
 
  ?>
 
-<div class="keranjang-title pb-3">
-    <p>Keranjang Belanja :<a class="tombol-biru"><?php echo $count; ?></a></p>
-</div>
-<div id="keranjang">
+
+  <div id="keranjang" class="ms-3 me-3">
+  <p class="keranjang-title mb-0 rounded">Keranjang Belanja :<a class="tombol-biru"><?php echo $count; ?></a></p>
   <table class="news">
     <tr align="center">
       <th>No</th>
@@ -45,11 +44,11 @@ $count = $query->rowCount();
             <td><?php echo $no; ?></td>
             <td><?php echo $value['id'] ?></td>
             <td><?php echo $value['deskripsi'] ?></td>
-            <td><?php echo "Rp.".number_format($value['harga'],0,",",".") ?></td>
+            <td><?php echo "Rp. ".$value['harga'] ?></td>
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
-            <td><?php echo "Rp.".number_format($value['total'],0,",",".") ?></td>
+            <td><?php echo "Rp. ".$value['total'] ?></td>
             <td>
               <a class="tombol-merah" href="?page=keranjang_hapus&id=<?php echo $value['id']; ?>">hapus</a>
             </td>
@@ -61,7 +60,7 @@ $count = $query->rowCount();
      ?>
      <tr>
        <td colspan="7"><b>TOTAL PEMBAYARAN</b></td>
-       <td colspan="2" align="center"><b><?php echo "Rp.".number_format($jumlah,0,",","."); ?></td></b>
+       <td colspan="2" align="center"><b><?php echo "Rp. ".$jumlah; ?></td></b>
      </tr>
     <?php if ($count > 0) { ?>
      <tr>

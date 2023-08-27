@@ -26,8 +26,8 @@ $count = $query->rowCount();
 </div>
 <div id="keranjang">
   <table class="news">
-    <tr align="center">
-      <th>No</th>
+    <tr>
+      <th align="center">No</th>
       <th>Id Pesanan</th>
       <th>Deskripsi</th>
       <th>Harga</th>
@@ -41,15 +41,15 @@ $count = $query->rowCount();
     $no=1;
     $jumlah=0;
     foreach ($data as $value): ?>
-        <tr align="center">
+        <tr>
             <td><?php echo $no; ?></td>
             <td><?php echo $value['id'] ?></td>
             <td><?php echo $value['deskripsi'] ?></td>
-            <td><?php echo "Rp.".number_format($value['harga'],0,",",".") ?></td>
+            <td><?php echo "Rp. ".$value['harga'] ?></td>
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
-            <td><?php echo "Rp.".number_format($value['total'],0,",",".") ?></td>
+            <td><?php echo "Rp. ".$value['total'] ?></td>
             <td>
               <a class="tombol-merah" href="?page=keranjang_hapus&id=<?php echo $value['id']; ?>">hapus</a>
             </td>
@@ -61,15 +61,15 @@ $count = $query->rowCount();
      ?>
      <tr>
        <td colspan="7"><b>TOTAL PEMBAYARAN</b></td>
-       <td colspan="2" align="center"><b><?php echo "Rp.".number_format($jumlah,0,",","."); ?></td></b>
+       <td colspan="2"><b><?php echo "Rp. ".$jumlah; ?></td></b>
      </tr>
     <?php if ($count > 0) { ?>
      <tr>
-       <td colspan="8">Anda dapat <b>menghapus</b> barang dalam keranjang jika ada perubahan. jika tidak ada perubahan lagi,
+       <td colspan="7">Anda dapat <b>menghapus</b> barang dalam keranjang jika ada perubahan. jika tidak ada perubahan lagi,
        anda dapat melanjutkan <b>Pemesanan</b> dengan memilih tombol <b>Proses</b>.
        </td>
 
-       <td><a class="tombol-biru" href="?page=pesanan&id=<?php echo $id ?>&jum=<?php echo $jumlah ?>">Proses</a></td>
+       <td colspan="2"><a class="tombol-biru" href="?page=pesanan&id=<?php echo $id ?>&jum=<?php echo $jumlah ?>">Proses</a></td>
      </tr>
    <?php } ?>
   </table>

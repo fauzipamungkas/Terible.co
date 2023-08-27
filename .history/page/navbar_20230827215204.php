@@ -1,5 +1,8 @@
 <?php
+include "lib/koneksi";
+?>
 
+<?php
 session_start();
 if (isset ($_SESSION['username'])){
   if ($_SESSION['status'] == 'user'){

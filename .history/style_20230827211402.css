@@ -84,6 +84,11 @@ table.news {
   height: 50px;
 }
 
+th {
+  display: flex;
+  justify-items: center;
+}
+
 .news tr:hover {
   background-color: #d8d8d8;
 }

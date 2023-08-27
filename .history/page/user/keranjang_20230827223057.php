@@ -45,11 +45,11 @@ $count = $query->rowCount();
             <td><?php echo $no; ?></td>
             <td><?php echo $value['id'] ?></td>
             <td><?php echo $value['deskripsi'] ?></td>
-            <td><?php echo "Rp.".number_format($value['harga'],0,",",".") ?></td>
+            <td><?php echo "Rp. ".number_format($value['harga']) ?></td>
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
-            <td><?php echo "Rp.".number_format($value['total'],0,",",".") ?></td>
+            <td><?php echo "Rp. ".number_format($value['total']) ?></td>
             <td>
               <a class="tombol-merah" href="?page=keranjang_hapus&id=<?php echo $value['id']; ?>">hapus</a>
             </td>
@@ -61,7 +61,7 @@ $count = $query->rowCount();
      ?>
      <tr>
        <td colspan="7"><b>TOTAL PEMBAYARAN</b></td>
-       <td colspan="2" align="center"><b><?php echo "Rp.".number_format($jumlah,0,",","."); ?></td></b>
+       <td colspan="2" align="center"><b><?php echo "Rp. ".number_format($jumlah); ?></td></b>
      </tr>
     <?php if ($count > 0) { ?>
      <tr>
