@@ -46,7 +46,7 @@
       <td>Harga</td>
       <td>
         <input type="hidden" name="harga" value="<?php echo $row->harga; ?>">
-        <?php echo "Rp. ".number_format($row->harga); ?>
+        <?php echo "Rp. ".format_number($row->harga); ?>
       </td>
     </tr>
 <!-- code by muh iriansyah putra pratama -->

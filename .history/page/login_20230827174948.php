@@ -4,7 +4,7 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="../css/loginstyle.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- code by muh iriansyah putra pratama -->
 </head>
 
 <body>
@@ -16,16 +16,20 @@
 
       include "../lib/koneksi.php";
       session_start();
+      // code by muh iriansyah putra pratama
       if (isset($_POST['submit'])) {
         $user = $_POST['username'];
         $pwd = $_POST['password'];
+        // code by muh iriansyah putra pratama
         $pdo = $conn->prepare("SELECT * FROM tbl_users WHERE username=:a AND password=:b");
         $pdo->execute(array(':a' => $user, ':b' => $pwd));
         $count = $pdo->rowcount();
         $row = $pdo->fetch(PDO::FETCH_OBJ);
+        // code by muh iriansyah putra pratama
         if ($count == 0) {
           echo "<center><a class='tombol-merah'>Login Gagal</a></center>";
         } else {
+          // code by muh iriansyah putra pratama
           $_SESSION['username'] = $user;
           $_SESSION['password'] = $pwd;
           $_SESSION['status'] = $row->title;
@@ -34,6 +38,7 @@
                 url=../index.php'>";
         }
       }
+      // code by muh iriansyah putra pratama
       ?>
 
       <p>
@@ -45,17 +50,13 @@
       <p>
         <input type="submit" name="submit" value="Masuk">
       </p>
-      <div class="d-grid gap-2 ps-3 pe-3">
-        <a href="../index.php" class="btn btn-primary">kembali</a>
-      </div>
+      <a href="../index.php" class="btn btn-primary">kembali</a>
       <p>Belum punya akun ? <a href="daftar.php" class="tombol-biru">Yuk Daftar</a></p>
       <br>
      
     </form>
 
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

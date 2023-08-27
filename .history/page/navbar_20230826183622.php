@@ -16,13 +16,12 @@ if (isset ($_SESSION['username'])){
     $user = $_SESSION['username'];
     // $title = $_SESSION['status'];
 
-    echo "
-          <a href='?page=profilad'><b>Hey, </b>$user</a>
-          <a href='?page=beranda'>Beranda</a>
+    echo "<a href='?page=beranda'>Beranda</a>
           <a href='?page=barang'>Barang</a>
           <a href='?page=transaksi'>Transaksi</a>
           <a href='?page=user'>User</a>
-          <a href='page/logout.php' class='logout'>keluar</a>";
+          <a href='page/logout.php' class='logout'>keluar</a>
+          <a href='?page=profilad'><b>Hey, </b>$user</a>";
   }
 } else {
   echo "<a href='?page=beranda'>Beranda</a>

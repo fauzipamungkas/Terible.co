@@ -45,7 +45,7 @@
       <p>
         <input type="submit" name="submit" value="Masuk">
       </p>
-      <div class="d-grid gap-2 ps-3 pe-3">
+      <div class="d-grid gap-2 ps-2 pe-2">
         <a href="../index.php" class="btn btn-primary">kembali</a>
       </div>
       <p>Belum punya akun ? <a href="daftar.php" class="tombol-biru">Yuk Daftar</a></p>

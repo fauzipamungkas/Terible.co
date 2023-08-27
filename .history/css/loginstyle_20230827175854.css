@@ -71,7 +71,7 @@ textarea {
   border-bottom: 6px solid #545856;
 }
 .login input[type="submit"]:hover {
-  background: #2a80b9;
+  background: #abb6b0;
 }
 
 .login input[type="submit"]:focus {
@@ -89,6 +89,15 @@ a:hover {
   color: #fff;
 }
 .tombol-biru {
+  background: #2c97df;
+  color: white;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 4px solid #2a80b9;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
   font-family: sans-serif;
   font-size: 11pt;
 }
@@ -96,7 +105,7 @@ a:hover {
   background: #2a80b9;
   color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px 20px;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 11pt;

@@ -89,6 +89,11 @@ a:hover {
   color: #fff;
 }
 .tombol-biru {
+  background: #2c97df;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
   font-family: sans-serif;
   font-size: 11pt;
 }
@@ -96,7 +101,7 @@ a:hover {
   background: #2a80b9;
   color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px 20px;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 11pt;

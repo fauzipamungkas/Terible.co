@@ -27,17 +27,16 @@
 
   foreach ($data as $value) { ?>
     
-      <div class="col-3 mb-5">
+      <div class="col-3">
         <div class="card shadow ps-3 pe-3" style="width: 18rem;">
-        <div style="height: 150px; align-items: center" class="d-flex">
+        <div style="height: 150px" class="text-center">
           <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50 mx-auto mt-3" alt="...">
         </div>
             <div class="card-body">
             <h5 class="card-title text-truncate"><?php echo $value['deskripsi']; ?></h5>
-            <div class="d-flex justify-content-between me-2">
-              <p class="fw-bold">
-                <?php echo "Rp.".number_format($value['harga']); ?>
-              </p>
+            <div><?php echo "Rp.".$value['harga']; ?>
+          
+          </div>
             <?php
             $id = $value['id_barang'];
             $query = $conn->prepare("SELECT SUM(qty)AS jumlah FROM tbl_pesanan WHERE id_barang=:id");
@@ -48,7 +47,9 @@
             $stok = $value['stok'];
             $sisa = ($stok-$hasil);
             ?>
+            <div class="col">
               <p>
+
                 Stok : <?php
             if ($sisa > 0) echo $sisa;
             else echo "Habis";

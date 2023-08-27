@@ -1,5 +1,5 @@
 body {
-  background-color: #0c0e0d !important;
+  background-image: url("/img/bg.jpg") !important;
   font-family: "Open Sans", sans-serif;
 }
 .login {

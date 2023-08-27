@@ -2,7 +2,7 @@
 
 <hr class="w-75 mx-auto border border-3 border-dark">
 
-<div class="row mb-5">
+<div class="row">
   <div class="col-12">
     <?php
       if (isset ($_SESSION['username']) == ""){ ?>
@@ -14,7 +14,7 @@
   </div>
 
   <div class="m-5">
-    <h3>Produk Kami</h3>
+    <h3>Produk Populer</h3>
   </div>
   
   <?php
@@ -27,17 +27,14 @@
 
   foreach ($data as $value) { ?>
     
-      <div class="col-3 mb-5">
+      <div class="col-3 d-flex justify-content-center">
         <div class="card shadow ps-3 pe-3" style="width: 18rem;">
-        <div style="height: 150px; align-items: center" class="d-flex">
+        <div heigth="150px">
           <img src="img/jersey/<?php echo $value['nama_image']; ?>" class="card-img-top w-50 mx-auto mt-3" alt="...">
         </div>
             <div class="card-body">
             <h5 class="card-title text-truncate"><?php echo $value['deskripsi']; ?></h5>
-            <div class="d-flex justify-content-between me-2">
-              <p class="fw-bold">
-                <?php echo "Rp.".number_format($value['harga']); ?>
-              </p>
+            <div class="col-6 fw-bold"><?php echo "Rp.".$value['harga']; ?></div>
             <?php
             $id = $value['id_barang'];
             $query = $conn->prepare("SELECT SUM(qty)AS jumlah FROM tbl_pesanan WHERE id_barang=:id");
@@ -48,14 +45,11 @@
             $stok = $value['stok'];
             $sisa = ($stok-$hasil);
             ?>
-              <p>
-                Stok : <?php
+            <div class="col-6">Stok : <?php
             if ($sisa > 0) echo $sisa;
             else echo "Habis";
-            ?>
-            </p>
-            </div>
-            <div class="d-grid gap-2">
+            ?></div>
+            <div class="d-flex justify-content-center fixed-buttom">
               <?php
             if ($sisa > 0){
               if (isset ($_SESSION['username']) != ""){ ?>

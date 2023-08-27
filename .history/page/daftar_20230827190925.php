@@ -64,7 +64,7 @@
             <p align="center"><a href="login.php">kembali</a></p>
             <br>
             <center>
-                <p>&copy; Fauzi Pamungkas</p>
+                <p>Repost by <a href="https://stokcoding.com/" title="StokCoding.com" target="_blank">StokCoding.com</a></p>
             </center>
         </form>
 
