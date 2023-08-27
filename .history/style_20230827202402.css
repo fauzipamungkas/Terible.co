@@ -119,7 +119,9 @@ table tr td.list :hover {
 
 .keranjang-title {
   background: #ff7416;
-  padding: 10px;
+
+  height: 30px;
+  margin: auto;
 }
 .keranjang-title p {
   color: #f3f5f4;

@@ -26,7 +26,7 @@
 
 <?php include("keranjang.php") ?>
 
-  <table class="news mt-5">
+  <table class="news">
     <tr>
       <th>No</th>
       <th>Id Pesanan</th>
@@ -50,7 +50,7 @@
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
-            <td><?php echo $value['d-ate_in'] ?></td>
+            <td><?php echo $value['date_in'] ?></td>
             <td><?php echo $value['total'] ?></td>
             <td>
               <a class="tombol-biru">Sukses</a>

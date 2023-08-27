@@ -50,7 +50,7 @@
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
-            <td><?php echo $value['d-ate_in'] ?></td>
+            <td><?php echo $value['date_in'] ?></td>
             <td><?php echo $value['total'] ?></td>
             <td>
               <a class="tombol-biru">Sukses</a>
