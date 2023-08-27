@@ -35,6 +35,7 @@
   elseif ($page == "profilad_ubahpro") include("page/admin/profil/profil_ubahpro.php");
 
 
+// code by muh iriansyah putra pratama
 else echo"Konten tidak ada";
 
 ?>
