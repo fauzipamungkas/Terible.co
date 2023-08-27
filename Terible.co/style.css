@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css link */
+.link {
+  color: #00bfff;
+  text-decoration: none;
+}
+.link:hover {
+  background: #00bfff;
+  border-radius: 4px;
+  color: #fff;
+  padding: 2px;
+}
+
+/* css login */
+.login {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #2c97df;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.login a {
+  color: white;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* css navbar */
+nav {
+  background-color: #3db8fd;
+  color: white;
+  padding: 0 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline !important;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.box-title {
+  height: 30px;
+  margin: auto;
+}
+.box-title p {
+  margin: 5px 5px;
+  font-family: sans-serif;
+}
+
+table.news {
+  border-collapse: collapse;
+  width: 100%;
+}
+.news td {
+  padding: 15px;
+  border: 1px solid black;
+}
+.news th {
+  background-color: #00bfff;
+  color: white;
+  height: 50px;
+}
+
+.news tr:hover {
+  background-color: #d8d8d8;
+}
+table.article {
+  border-collapse: collapse;
+  border: 0px;
+  width: 100%;
+}
+.article td {
+  border: 0px;
+  padding: 10px;
+}
+.article tr:hover {
+  background-color: #e1e1e1;
+}
+
+.paging {
+  text-align: center;
+  margin: 20px;
+}
+/* code by muh iriansyah putra pratama */
+.paging span {
+  padding: 5px 20px;
+  margin-right: 5px;
+  background: #eee;
+  border-radius: 10px;
+}
+/* code by muh iriansyah putra pratama */
+
+table tr td.list :hover {
+  background: #00bfff;
+  border-radius: 5px;
+}
+
+.keranjang-title {
+  background: #ff7416;
+  padding: 10px;
+}
+.keranjang-title p {
+  color: #f3f5f4;
+  margin: 5px 5px;
+  font-family: sans-serif;
+  text-align: center;
+}
+#keranjang {
+  margin: auto;
+  min-height: 100px;
+  overflow: hidden;
+}
+#keranjang p {
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: justify;
+}
+.footer {
+  background: #00bfff;
+  border-radius: 0px 0px 10px 10px;
+  border: 3px solid #00bfff;
+
+  margin: 10px auto;
+}
+.footer p {
+  font-family: sans-serif;
+  color: #f3f5f4;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.tombol-biru {
+  background: #2c97df;
+  color: white;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 4px solid #2a80b9;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 11pt;
+  margin: 10px;
+}
+.tombol-biru:hover {
+  background: #2a80b9;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 11pt;
+}
+/* code by muh iriansyah putra pratama */
+.tombol-merah {
+  background: #ef4162;
+  color: white;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 4px solid #da2648;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 11pt;
+}
+.tombol-merah:hover {
+  background: #da2648;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 11pt;
+}
+.jersey {
+  background: #000;
+  width: 200px;
+}
+.pesan {
+  background: #ef4162;
+  margin: 10px;
+  border-radius: 5px;
+}
+.pesan p {
+  color: #fff;
+}
