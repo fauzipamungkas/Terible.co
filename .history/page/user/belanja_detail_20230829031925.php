@@ -108,9 +108,9 @@
         </td>
       </tr>
         <tr>
-          <td>Berat/satuan</td>
+          
         <td>
-          <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?> gram" >
+          <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>" hidden>
         </td>
       </tr>
       <tr>

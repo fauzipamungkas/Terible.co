@@ -96,9 +96,9 @@ table.article {
   border: 0px;
   padding: 10px;
 }
-/* .article tr:hover {
+.article tr:hover {
   background-color: #e1e1e1;
-} */
+}
 
 .paging {
   text-align: center;

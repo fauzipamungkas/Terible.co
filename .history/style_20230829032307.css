@@ -96,9 +96,9 @@ table.article {
   border: 0px;
   padding: 10px;
 }
-/* .article tr:hover {
+.article tr:hover {
   background-color: #e1e1e1;
-} */
+}
 
 .paging {
   text-align: center;
@@ -113,10 +113,10 @@ table.article {
 }
 /* code by muh iriansyah putra pratama */
 
-table tr td.list :hover {
+/* table tr td.list :hover {
   background: #00bfff;
   border-radius: 5px;
-}
+} */
 
 .keranjang-title {
   background: #ff7416;
