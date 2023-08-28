@@ -106,30 +106,6 @@
       <td>
         <input type="text" name="totalberat" class="form-control" value="120">
       </td>
-      <td>
-        <input type="text" name="provinsi" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="kota" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="type_kota" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="kode_pos" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="kurir" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="paket" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="ongkir" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="estimasi" class="form-control" value="120">
-      </td>
     </tr>
     <tr>
       <td></td>

@@ -6,12 +6,11 @@
   <h1 align="center">Tentang</h1>
   <div class="container pt-3">
     <div class="row">
-      <div class="col-12">
+      <div class="col">
         <img src="./img/IMG-20230828-WA0014.jpg" alt="" width="100%">
       </div>
-      <div class="col-12 d-flex justify-content-center align-items-center p-5">
-        <p class="me-5 pt-2"><strong>FOLLOW US :</strong></p>
-        <a href=""><img src="./img/icons/instagram.png" alt="" width="50px"></a>
+      <div class="col">
+        <a href=""><img src="./img/icons/instagram.png" alt=""></a>
       </div>
     </div>
   </div>

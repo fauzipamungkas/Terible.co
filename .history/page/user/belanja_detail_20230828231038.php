@@ -55,7 +55,7 @@
     <tr>
       <td>Ukuran</td>
       <td>
-        <select name="ukuran" class="form-control">
+        <select name="ukuran">
           <option>-- pilih salah satu --</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -74,21 +74,21 @@
     <tr>
       <td>Provinsi : </td>
       <td>
-        <select name="provinsi" class="form-control">
+        <select name="provinsi">
         </select>
       </td>
     </tr>
     <tr>
       <td>Kota : </td>
       <td>
-        <select name="kota" class="form-control">
+        <select name="kota">
         </select>
       </td>
     </tr>
     <tr>
       <td>Kurir Pengiriman</td>
       <td>
-        <select name="kurir" class="form-control">
+        <select name="kurir">
           
         </select>
       </td>
@@ -96,7 +96,7 @@
     <tr>
       <td>Pilih Paket</td>
       <td>
-        <select name="paket" class="form-control">
+        <select name="paket">
           
         </select>
       </td>
@@ -105,30 +105,6 @@
       <td>Berat</td>
       <td>
         <input type="text" name="totalberat" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="provinsi" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="kota" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="type_kota" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="kode_pos" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="kurir" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="paket" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="ongkir" class="form-control" value="120">
-      </td>
-      <td>
-        <input type="text" name="estimasi" class="form-control" value="120">
       </td>
     </tr>
     <tr>

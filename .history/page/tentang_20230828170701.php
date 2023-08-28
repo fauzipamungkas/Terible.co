@@ -9,8 +9,8 @@
       <div class="col-12">
         <img src="./img/IMG-20230828-WA0014.jpg" alt="" width="100%">
       </div>
-      <div class="col-12 d-flex justify-content-center align-items-center p-5">
-        <p class="me-5 pt-2"><strong>FOLLOW US :</strong></p>
+      <div class="col-12 d-flex justify-content-center">
+        <p class="me-5"><strong>FOLLOW US :</strong></p>
         <a href=""><img src="./img/icons/instagram.png" alt="" width="50px"></a>
       </div>
     </div>
