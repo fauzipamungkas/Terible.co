@@ -37,7 +37,7 @@ $(document).ready(function () {
       data: "ekspedisi=" + nama_ekpedisi + "&kota=" + datakota + "&berat=" + total_berat,
       success: function (data_paket) {
         $("select[name=paket]").html(data_paket);
-        $("input[name=kurir]").val(nama_ekpedisi);
+        $("input[name=nama_ekspedisi]").val(nama_ekpedisi);
       },
     });
   });
@@ -45,7 +45,7 @@ $(document).ready(function () {
   $("select[name=kota]").on("change", function () {
     var prov = $("option:selected", this).attr("nama_provinsi");
     var dist = $("option:selected", this).attr("nama_kota");
-    var type = $("option:selected", this).attr("type_kota");
+    var type = $("option:selected", this).attr("type");
     var pos = $("option:selected", this).attr("kode_pos");
     $("input[name=provinsi]").val(prov);
     $("input[name=kota]").val(dist);

@@ -38,7 +38,6 @@ if ($err) {
         id_kota='".$value["city_id"]."' 
         nama_provinsi='".$value["province"]."'
         nama_kota='".$value["city_name"]."'
-        type_kota='".$value["type"]."'
         kode_pos='".$value["postal_code"]."'
         >";
         echo $value["type"]." ";

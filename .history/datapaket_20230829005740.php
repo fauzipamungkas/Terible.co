@@ -41,8 +41,8 @@ if ($err) {
     etd='".$value["cost"]["0"]["etd"]."'
     >";
     echo $value["service"]." ";
-    echo "Rp.".number_format($value["cost"]["0"]["value"])." ";
-    echo $value["cost"]["0"]["etd"]." Hari";
+    echo "Rp.".number_format($value["cost"]["0"]["value",0,",","."])." ";
+    echo $value["cost"]["0"]["etd"]." ";
     echo "</option>";
   }
 }

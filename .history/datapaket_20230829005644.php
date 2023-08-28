@@ -42,7 +42,7 @@ if ($err) {
     >";
     echo $value["service"]." ";
     echo "Rp.".number_format($value["cost"]["0"]["value"])." ";
-    echo $value["cost"]["0"]["etd"]." Hari";
+    echo $value["cost"]["0"]["etd"]." ";
     echo "</option>";
   }
 }

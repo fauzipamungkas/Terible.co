@@ -98,21 +98,19 @@
       <td>
         <select name="paket" class="form-control">
           
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>Berat/g</td>
-        <td>
-          <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="text" name="provinsi" class="form-control">
-        </td>
-        <td>
-          <input type="text" name="kota" class="form-control">
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Berat</td>
+      <td>
+        <input type="text" name="totalberat" class="form-control" value="120">
+      </td>
+      <td>
+        <input type="text" name="provinsi" class="form-control">
+      </td>
+      <td>
+        <input type="text" name="kota" class="form-control">
       </td>
       <td>
         <input type="text" name="type_kota" class="form-control">
@@ -120,9 +118,6 @@
       <td>
         <input type="text" name="kode_pos" class="form-control">
       </td>
-    </tr>
-      <tr>
-        
       <td>
         <input type="text" name="kurir" class="form-control">
       </td>

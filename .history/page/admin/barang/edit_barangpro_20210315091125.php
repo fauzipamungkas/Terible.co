@@ -13,7 +13,6 @@ $id = $_POST['id_barang'];
 $desk = $_POST['deskripsi'];
 $harga = $_POST['harga'];
 $stok = $_POST['stok'];
-$berat = $_POST['berat'];
 
 $name_image = $_FILES['gambar']['name'];
 $loc_image = $_FILES['gambar']['tmp_name'];
@@ -49,14 +48,13 @@ if ($loc_image != ""){
                                   deskripsi = :deskripsi,
                                   harga = :harga,
                                   stok = :stok,
-								  berat = :berat,
                                   created = :created,
                                   nama_image = :nama_image,
                                   type_image = :type_image,
                                   size_image = :size_image
                                   WHERE id_barang = :id_barang');
 
-      			$updatedata = array(':deskripsi' => $desk, ':harga' => $harga, ':stok' => $stok, ':berat' =>$berat, 'created' => $date, ':nama_image' => $name_image,
+      			$updatedata = array(':deskripsi' => $desk, ':harga' => $harga, ':stok' => $stok, 'created' => $date, ':nama_image' => $name_image,
       						              ':type_image' => $type_image, ':size_image' => $size_image, ':id_barang' => $id);
 // code by muh iriansyah putra pratama
       			$pdo->execute($updatedata);

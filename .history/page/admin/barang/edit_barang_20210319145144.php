@@ -48,12 +48,6 @@
         <input type="text" name="stok" size="50" value="<?php echo $row->stok ?>" required>
       </td>
     </tr>
-    <tr>
-      <td>Berat</td>
-      <td>
-        <input type="text" name="berat" size="50" value="<?php echo $row->berat ?>" required>
-      </td>
-    </tr>
 <!-- code by muh iriansyah putra pratama -->
     <tr>
       <td></td>

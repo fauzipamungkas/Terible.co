@@ -40,7 +40,7 @@
             <td><?php echo $value['deskripsi'] ?></td>
             <td><?php echo $value['harga'] ?></td>
             <td><?php echo $value['stok'] ?></td>
-            <td><?php echo $value['berat'] ?> gram</td>
+            <td><?php echo $value['berat'] ?>gram</td>
             <td><?php echo $value['created'] ?></td>
             <td>
               <a class="tombol-biru" href="?page=edit_barang&id=<?php echo $value['id_barang']; ?>">ubah</a><br><br>

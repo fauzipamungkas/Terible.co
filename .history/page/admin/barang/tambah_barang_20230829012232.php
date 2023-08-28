@@ -17,19 +17,19 @@
       <tr>
         <td>Deskripsi Jersey</td>
         <td>
-          <input type="text" name="deskripsi" class="form-control" placeholder="ex: jersey barcelona away" required>
+          <input type="text" name="deskripsi" size="50" placeholder="ex: jersey barcelona away" required>
         </td>
       </tr>
       <tr>
         <td>Harga</td>
         <td>
-          <input type="text" name="harga" class="form-control" placeholder="ex: 130000" required>
+          <input type="text" name="harga" size="50" placeholder="ex: 130000" required>
         </td>
       </tr>
       <tr>
         <td>Stok Jersey</td>
         <td>
-          <input type="text" name="stok" class="form-control" placeholder="ex: 100" required>
+          <input type="text" name="stok" size="50" placeholder="ex: 100" required>
         </td>
       </tr>
       <tr>
@@ -41,7 +41,7 @@
       <tr>
         <td></td>
         <td>
-          <input class="tombol-biru m-5" type="submit" name="add" value="Tambah & Simpan">
+          <input class="tombol-biru" type="submit" name="add" value="Tambah & Simpan">
           <a class="tombol-merah" href="?page=barang">Tutup</a>
         </td>
       </tr>

@@ -12,7 +12,6 @@
 $desk = $_POST['deskripsi'];
 $harga = $_POST['harga'];
 $stok = $_POST['stok'];
-$berat = $_POST['berat'];
 
 $name_image = $_FILES['gambar']['name'];
 $loc_image = $_FILES['gambar']['tmp_name'];
@@ -33,11 +32,11 @@ if (in_array($extension, $cek) === TRUE){
 
     try {
 			$conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$pdo = $conn->prepare('INSERT INTO tbl_barang (deskripsi, harga, stok, created, nama_image, type_image, size_image, berat)
-									values (:deskripsi, :harga, :stok, :created, :nama_image, :type_image, :size_image, :berat)');
+			$pdo = $conn->prepare('INSERT INTO tbl_barang (deskripsi, harga, stok, created, nama_image, type_image, size_image)
+									values (:deskripsi, :harga, :stok, :created, :nama_image, :type_image, :size_image)');
 
 			$insertdata = array(':deskripsi' => $desk, ':harga' => $harga, ':stok' => $stok, 'created' => $date,
-						              ':nama_image' => $name_image, ':type_image' => $type_image, ':size_image' => $size_image, ':berat'=> $berat);
+						              ':nama_image' => $name_image, ':type_image' => $type_image, ':size_image' => $size_image);
 // code by muh iriansyah putra pratama
 			$pdo->execute($insertdata);
 

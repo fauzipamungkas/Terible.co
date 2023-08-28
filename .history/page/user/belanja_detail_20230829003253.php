@@ -102,12 +102,13 @@
         </td>
       </tr>
       <tr>
-        <td>Berat/g</td>
+        <td>Berat</td>
         <td>
-          <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>">
+          <input type="text" name="totalberat" class="form-control" value="120">
         </td>
       </tr>
       <tr>
+
         <td>
           <input type="text" name="provinsi" class="form-control">
         </td>
@@ -120,9 +121,6 @@
       <td>
         <input type="text" name="kode_pos" class="form-control">
       </td>
-    </tr>
-      <tr>
-        
       <td>
         <input type="text" name="kurir" class="form-control">
       </td>

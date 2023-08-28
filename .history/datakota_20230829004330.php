@@ -28,9 +28,9 @@ if ($err) {
     $array_response = json_decode($response, true);
     $data_kota = $array_response["rajaongkir"]["results"];
 
-    // echo "<pre>";
-    // print_r($data_kota);
-    // echo "</pre>";
+    echo "<pre>";
+    print_r($data_kota);
+    echo "</pre>";
         echo "<option>Pilih Kota</option>";
 
     foreach ($data_kota as $key => $value) {
@@ -38,8 +38,7 @@ if ($err) {
         id_kota='".$value["city_id"]."' 
         nama_provinsi='".$value["province"]."'
         nama_kota='".$value["city_name"]."'
-        type_kota='".$value["type"]."'
-        kode_pos='".$value["postal_code"]."'
+        kode_pos='".$value["postal_coe"]."'
         >";
         echo $value["type"]." ";
         echo $value["city_name"];

@@ -12,7 +12,7 @@
 $desk = $_POST['deskripsi'];
 $harga = $_POST['harga'];
 $stok = $_POST['stok'];
-$berat = $_POST['berat'];
+$berat = $_POST['barang'];
 
 $name_image = $_FILES['gambar']['name'];
 $loc_image = $_FILES['gambar']['tmp_name'];

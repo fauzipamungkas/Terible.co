@@ -41,7 +41,7 @@
       <tr>
         <td></td>
         <td>
-          <input class="tombol-biru m-5" type="submit" name="add" value="Tambah & Simpan">
+          <input class="tombol-biru" type="submit" name="add" value="Tambah & Simpan">
           <a class="tombol-merah" href="?page=barang">Tutup</a>
         </td>
       </tr>
