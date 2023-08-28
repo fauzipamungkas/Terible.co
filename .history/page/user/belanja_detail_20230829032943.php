@@ -110,7 +110,7 @@
         <tr>
           <td>Berat/satuan</td>
         <td>
-          <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>" >
+          <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>+'gram'" >
         </td>
       </tr>
       <tr>
