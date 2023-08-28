@@ -37,7 +37,6 @@
       <th>Ukuran</th>
       <th>Qty</th>
       <th>Kurir</th>
-      <th>alamat</th>
       <th>Tanggal Masuk</th>
       <th>Total</th>
       <th>Status</th>
@@ -53,7 +52,6 @@
             <td><?php echo $value['ukuran'] ?></td>
             <td><?php echo $value['qty'] ?></td>
             <td><?php echo $value['kurir'] ?></td>
-            <td><?php echo $value['alamat'] ?></td>
             <td><?php echo $value['date_in'] ?></td>
             <td class="fw-bold"><?php echo "Rp.".number_format($value['total'],0,",",".") ?></td>
             <td align="center">

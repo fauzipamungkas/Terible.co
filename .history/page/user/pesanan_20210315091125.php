@@ -12,7 +12,7 @@
     $id = $_GET['id'];
     try {
       $conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $insert = $conn->prepare("INSERT INTO tbl_pesanan (id_user,id_barang,ukuran,qty,kurir,date_in,total,alamat) SELECT id_user,id_barang,ukuran,qty,kurir,date_in,total,alamat FROM tbl_keranjang WHERE id_user=:id");
+      $insert = $conn->prepare("INSERT INTO tbl_pesanan (id_user,id_barang,ukuran,qty,kurir,date_in,total) SELECT id_user,id_barang,ukuran,qty,kurir,date_in,total FROM tbl_keranjang WHERE id_user=:id");
       $insert->bindparam(':id', $id);
       $insert->execute();
 

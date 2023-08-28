@@ -16,7 +16,6 @@
     $ongkir = $_POST['ongkir'];
     $total = ($harga+$ongkir) * $qty;
     $sisa = $_POST['sisa'];
-    $alamat = $_POST['alamat'];
 
     if ($qty > $sisa){
       echo "<script>alert('Kuantitas pesanan melebihi sisa stok barang');window.location='?page=belanja_detail&id=$idbarang&st=$sisa'</script>";
@@ -28,9 +27,9 @@
 
     try {
       $conn ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $pdo = $conn->prepare('INSERT INTO tbl_keranjang (id_user, id_barang, ukuran, qty, kurir, date_in, total, alamat)
-                  values (:id_user, :id_barang, :ukuran, :qty, :kurir, :date_in, :total, :alamat)');
-      $insertdata = array(':id_user' => $iduser, ':id_barang' => $idbarang, ':ukuran' => $ukuran, 'qty' => $qty, 'kurir' => $kurir, ':date_in' => $date, ':total' => $total, ':alamat'=>$alamat);
+      $pdo = $conn->prepare('INSERT INTO tbl_keranjang (id_user, id_barang, ukuran, qty, kurir, date_in, total)
+                  values (:id_user, :id_barang, :ukuran, :qty, :kurir, :date_in, :total)');
+      $insertdata = array(':id_user' => $iduser, ':id_barang' => $idbarang, ':ukuran' => $ukuran, 'qty' => $qty, 'kurir' => $kurir, ':date_in' => $date, ':total' => $total);
 
       $pdo->execute($insertdata);
       echo "<center><b>barang berhasil ditambahkan ke keranjang</b></center>";

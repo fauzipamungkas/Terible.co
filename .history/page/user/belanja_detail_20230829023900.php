@@ -104,7 +104,7 @@
       <tr>
         <td>Berat/g</td>
         <td>
-          <textarea name="alamat" class="form-control"></textarea>
+          <textarea name="alamat" id="" cols="30" rows="10"></textarea>
         </td>
         <td>
           <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>">

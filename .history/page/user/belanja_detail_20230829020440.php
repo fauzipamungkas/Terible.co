@@ -104,9 +104,6 @@
       <tr>
         <td>Berat/g</td>
         <td>
-          <textarea name="alamat" class="form-control"></textarea>
-        </td>
-        <td>
           <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>">
         </td>
       </tr>
@@ -141,7 +138,7 @@
     </tr>
     <tr>
       <td>
-        <input type="text" name="total" class="form-control" value="" hidden>
+        <input type="text" name="total" class="form-control" value="">
       </td>
       <td>
         <input class="tombol-biru" type="submit" name="belanja" value="Isi dalam keranjang">
