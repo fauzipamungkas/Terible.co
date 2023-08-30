@@ -202,6 +202,6 @@ table tr td.list :hover {
   display: none;
 }
 
-.hidden-div {
-  display: none;
+.col {
+  display: flex;
 }

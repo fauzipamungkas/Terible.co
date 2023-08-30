@@ -6,7 +6,7 @@
 <?php
   include "lib/koneksi.php";
 
-    // $user = $_SESSION['username'];
+    $user = $_SESSION['username'];
     $ambiluser = $conn->prepare("SELECT * FROM tbl_users WHERE username =:user");
     $ambiluser->bindparam(':user', $user);
     $ambiluser->execute();
@@ -26,11 +26,7 @@
 <div class="container">
   <div class="row">
     <div class="col d-flex justify-content-center">
-    <?php
-      if ($sisa > 0){
-        if (isset ($_SESSION['username']) != ""){ ?>
-        <input type="hidden" name="id_user" value="<?php echo $data->id_user ?>">
-    <?php }} ?>
+      <input type="hidden" name="id_user" value="<?php echo $data->id_user ?>">
       <input type="hidden" name="id_barang" value="<?php echo $row->id_barang ?>">
       <img src="img/jersey/<?php echo $row->nama_image ?>" width="30%"><br><br>
     </div>
@@ -82,6 +78,12 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+    <button onclick="toggleDiv()">Toggle Div</button>
+    </div>
+  </div>
+  <div id="myDiv" class="hidden-div">
   <div class="row p-3">
     <div class="col d-flex">
       <div class="w-25">Qty</div>
@@ -140,17 +142,12 @@
       </div>
     </div>
   </div>
-  <?php
-      if ($sisa > 0){
-        if (isset ($_SESSION['username']) != ""){ ?>
-            <div class="row mb-5">
-              <div class="col d-flex justify-content-center gap-3">
-                <input class="btn btn-primary" type="submit" name="belanja" value="Isi dalam keranjang">
-                  <a class="btn btn-danger" href="?page=beranda">Kembali</a>
-              </div>
-            </div>
-  <?php }} ?>
- 
+  <div class="row mb-5">
+    <div class="col d-flex justify-content-center gap-3">
+      <input class="btn btn-primary" type="submit" name="belanja" value="Isi dalam keranjang">
+      <a class="btn btn-danger" href="?page=beranda">Kembali</a>
+    </div>
+  </div>
   </div>
 <div class="row">
 <div class="col d-flex">
@@ -189,3 +186,13 @@
   </div>
 </form>
 </div>
+<script>
+  function toggleDiv() {
+  var div = document.getElementById("myDiv");
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+}
+</script>

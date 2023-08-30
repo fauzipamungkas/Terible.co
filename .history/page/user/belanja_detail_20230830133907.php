@@ -6,7 +6,7 @@
 <?php
   include "lib/koneksi.php";
 
-    // $user = $_SESSION['username'];
+    $user = $_SESSION['username'];
     $ambiluser = $conn->prepare("SELECT * FROM tbl_users WHERE username =:user");
     $ambiluser->bindparam(':user', $user);
     $ambiluser->execute();
@@ -26,11 +26,7 @@
 <div class="container">
   <div class="row">
     <div class="col d-flex justify-content-center">
-    <?php
-      if ($sisa > 0){
-        if (isset ($_SESSION['username']) != ""){ ?>
-        <input type="hidden" name="id_user" value="<?php echo $data->id_user ?>">
-    <?php }} ?>
+      <input type="hidden" name="id_user" value="<?php echo $data->id_user ?>">
       <input type="hidden" name="id_barang" value="<?php echo $row->id_barang ?>">
       <img src="img/jersey/<?php echo $row->nama_image ?>" width="30%"><br><br>
     </div>
@@ -52,7 +48,7 @@
   <div class="row p-3">
     <div class="col d-flex">
       <div class="w-25">Harga </div>
-      <div class="ps-2">
+      <div>
         <input type="hidden" name="harga" value="<?php echo $row->harga; ?>">
           <?php echo "Rp.".number_format($row->harga,0,",","."); ?>
       </div>
@@ -61,7 +57,7 @@
   <div class="row p-3">
     <div class="col d-flex">
       <div class="w-25">Stok </div>
-      <div class="ps-2">
+      <div>
         <input type="hidden" name="sisa" value="<?php echo $sisa ?>">
           <?php echo $sisa ?>
       </div>
@@ -72,12 +68,12 @@
       <div class="w-25">Ukuran</div>
       <div class="w-25">
         <select name="ukuran" class="form-control">
-          <option>pilih Ukuran</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
+              <option>pilih salah satu</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
         </select>
       </div>
     </div>
@@ -128,7 +124,7 @@
   <div class="row p-3">
       <div class="col d-flex">
         <div class="w-25">Alamat</div>
-        <div class="w-25 ms-1">
+        <div class="w-25 ms-2">
           <textarea name="alamat" class="form-control"></textarea>
         </div>
       </div>
@@ -139,18 +135,6 @@
         <input type="text" name="totalberat" class="form-control" value="<?php echo $row->berat ?>" hidden>
       </div>
     </div>
-  </div>
-  <?php
-      if ($sisa > 0){
-        if (isset ($_SESSION['username']) != ""){ ?>
-            <div class="row mb-5">
-              <div class="col d-flex justify-content-center gap-3">
-                <input class="btn btn-primary" type="submit" name="belanja" value="Isi dalam keranjang">
-                  <a class="btn btn-danger" href="?page=beranda">Kembali</a>
-              </div>
-            </div>
-  <?php }} ?>
- 
   </div>
 <div class="row">
 <div class="col d-flex">
@@ -184,7 +168,14 @@
   </div>
 </div>
 </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center gap-3">
+      <input class="btn btn-primary" type="submit" name="belanja" value="Isi dalam keranjang">
+      <a class="btn btn-danger" href="?page=beranda">Kembali</a>
+    </div>
   
+
+</div>
 </div>
   </div>
 </form>

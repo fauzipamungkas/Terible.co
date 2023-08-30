@@ -87,6 +87,18 @@ table.news {
 .news tr:hover {
   background-color: #d8d8d8;
 }
+.article {
+  border-collapse: collapse;
+  border: 0px;
+  width: 100%;
+}
+.article td {
+  border: 0px;
+  padding: 10px;
+}
+/* .article tr:hover {
+  background-color: #e1e1e1;
+} */
 
 .paging {
   text-align: center;
@@ -199,9 +211,5 @@ table tr td.list :hover {
 
 /* hidden */
 .tuku {
-  display: none;
-}
-
-.hidden-div {
   display: none;
 }

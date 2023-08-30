@@ -43,7 +43,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col d-flex">
+    <div class="col d-flex w-50">
       <p>
         <?php echo $row->deskripsi ?>
       </p>

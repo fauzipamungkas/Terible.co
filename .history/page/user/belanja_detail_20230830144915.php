@@ -23,7 +23,7 @@
 <h1>Detail Barang</h1>
 <form name="belanja" method="post" action="?page=belanja_detailpro" enctype="multipart/form-data">
 
-<div class="container">
+<div class="container d-flex justify-content-center">
   <div class="row">
     <div class="col d-flex justify-content-center">
     <?php
@@ -42,7 +42,7 @@
       </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row w-75">
     <div class="col d-flex">
       <p>
         <?php echo $row->deskripsi ?>

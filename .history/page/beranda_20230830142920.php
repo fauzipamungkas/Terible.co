@@ -56,7 +56,9 @@
             </p>
             </div>
             <div class="d-grid gap-2">
+             
                 <a href="?page=belanja_detail&id=<?php echo $value['id_barang']; ?>&st=<?php echo $sisa; ?>" class="btn btn-primary">Beli</a>
+                
               </div>
           </div>
         </div>
